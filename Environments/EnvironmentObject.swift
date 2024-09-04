@@ -19,7 +19,12 @@ struct EnvironmentObject: View {
             
             List {
                 ForEach(viewModel.dataArray, id: \.self) { item in
-                    Text(item)
+                    NavigationLink {
+                        DetailView(selectedItem: item, viewModel: viewModel)
+                    } label: {
+                        Text(item)
+                    }
+
                 }
             }
             .navigationTitle("iOS Devices")
