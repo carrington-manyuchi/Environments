@@ -9,21 +9,19 @@ import SwiftUI
 
 struct FinalView: View {
     
-    @ObservedObject var viewModel: EnvironmentViewModel
-    
+    @EnvironmentObject var viewModel: EnvironmentViewModel
+
     var body: some View {
         ZStack {
             LinearGradient(colors: [Color.red, Color.blue, Color.green], startPoint: .topLeading, endPoint: .bottomTrailing)
                 .ignoresSafeArea()
-            
-            
-            
+                        
             ScrollView {
-                VStack(spacing: 20, content: {
+                VStack(spacing: 20) {
                     ForEach(viewModel.dataArray, id: \.self) { item in
                         Text(item)
                     }
-                })
+                }
                 .foregroundStyle(.white)
                 .font(.largeTitle)
             }
@@ -32,5 +30,5 @@ struct FinalView: View {
 }
 
 #Preview {
-    FinalView(viewModel: EnvironmentViewModel())
+    FinalView()
 }

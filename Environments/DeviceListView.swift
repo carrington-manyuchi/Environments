@@ -10,7 +10,7 @@
 
 import SwiftUI
 
-struct EnvironmentObject: View {
+struct DeviceListView: View {
     
     @StateObject var viewModel: EnvironmentViewModel = EnvironmentViewModel()
     
@@ -20,19 +20,20 @@ struct EnvironmentObject: View {
             List {
                 ForEach(viewModel.dataArray, id: \.self) { item in
                     NavigationLink {
-                        DetailView(selectedItem: item, viewModel: viewModel)
+                        DetailView(selectedItem: item)
                     } label: {
                         Text(item)
                     }
-
                 }
             }
             .navigationTitle("iOS Devices")
             .navigationBarTitleDisplayMode(.automatic)
         }
+        .environmentObject(viewModel)
     }
 }
 
+
 #Preview {
-    EnvironmentObject()
+    DeviceListView()
 }

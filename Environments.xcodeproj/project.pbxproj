@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E655FC1B2C885361004DB187 /* EnvironmentsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E655FC1A2C885361004DB187 /* EnvironmentsApp.swift */; };
-		E655FC1D2C885361004DB187 /* EnvironmentObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E655FC1C2C885361004DB187 /* EnvironmentObject.swift */; };
+		E655FC1D2C885361004DB187 /* DeviceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E655FC1C2C885361004DB187 /* DeviceListView.swift */; };
 		E655FC1F2C885363004DB187 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E655FC1E2C885363004DB187 /* Assets.xcassets */; };
 		E655FC222C885363004DB187 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E655FC212C885363004DB187 /* Preview Assets.xcassets */; };
 		E655FC292C885460004DB187 /* EnvironmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E655FC282C885460004DB187 /* EnvironmentViewModel.swift */; };
@@ -19,7 +19,7 @@
 /* Begin PBXFileReference section */
 		E655FC172C885361004DB187 /* Environments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Environments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E655FC1A2C885361004DB187 /* EnvironmentsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentsApp.swift; sourceTree = "<group>"; };
-		E655FC1C2C885361004DB187 /* EnvironmentObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentObject.swift; sourceTree = "<group>"; };
+		E655FC1C2C885361004DB187 /* DeviceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListView.swift; sourceTree = "<group>"; };
 		E655FC1E2C885363004DB187 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E655FC212C885363004DB187 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E655FC282C885460004DB187 /* EnvironmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentViewModel.swift; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 			children = (
 				E655FC1A2C885361004DB187 /* EnvironmentsApp.swift */,
 				E655FC282C885460004DB187 /* EnvironmentViewModel.swift */,
-				E655FC1C2C885361004DB187 /* EnvironmentObject.swift */,
+				E655FC1C2C885361004DB187 /* DeviceListView.swift */,
 				E655FC2A2C8856FF004DB187 /* DetailView.swift */,
 				E655FC2C2C885845004DB187 /* FinalView.swift */,
 				E655FC1E2C885363004DB187 /* Assets.xcassets */,
@@ -146,7 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E655FC1D2C885361004DB187 /* EnvironmentObject.swift in Sources */,
+				E655FC1D2C885361004DB187 /* DeviceListView.swift in Sources */,
 				E655FC2D2C885845004DB187 /* FinalView.swift in Sources */,
 				E655FC2B2C8856FF004DB187 /* DetailView.swift in Sources */,
 				E655FC1B2C885361004DB187 /* EnvironmentsApp.swift in Sources */,

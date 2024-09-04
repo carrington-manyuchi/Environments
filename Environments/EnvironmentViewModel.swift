@@ -6,8 +6,10 @@
 //
 
 import Foundation
+import SwiftUI
 
 class EnvironmentViewModel: ObservableObject {
+    
     @Published var dataArray: [String] = []
     
     init() {
@@ -17,5 +19,6 @@ class EnvironmentViewModel: ObservableObject {
     func getData() {
         self.dataArray.append(contentsOf: [ "iMac", "iPad", "iPhone", "Apple Watch"])
     }
+    
     
 }

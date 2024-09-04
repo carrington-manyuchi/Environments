@@ -10,7 +10,6 @@ import SwiftUI
 struct DetailView: View {
     
     let selectedItem: String
-    @ObservedObject var viewModel: EnvironmentViewModel
     
     var body: some View {
         ZStack {
@@ -18,7 +17,7 @@ struct DetailView: View {
             
             
             NavigationLink {
-                FinalView(viewModel: viewModel  )
+                FinalView()
             } label: {
                 Text(selectedItem)
                     .font(.headline)
@@ -33,5 +32,5 @@ struct DetailView: View {
 }
 
 #Preview {
-    DetailView(selectedItem: "selectedItem", viewModel: EnvironmentViewModel())
+    DetailView(selectedItem: "selectedItem")
 }
